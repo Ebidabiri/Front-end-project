@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online SHOPE</title>
+
+    <script>document.getElementsByTagName("html")[0].className += " js";</script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <header class="section-header border-bottom fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-black fixed-top fa-transporter-1">
+            <div class="container"> <a class="navbar-brand" href="#"> <i class="fas fa-alien"></i> Online SHOP</a>
+                <div class="d-flex align-items-center">
+                    <div class="d-xl-none me-2"> <a href="" class="btn btn-light" data-bs-toggle="modal"
+                            data-bs-target="#cart"> <i class="fa fa-bags-shopping"></i> </a></div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar_main5" aria-expanded="false" aria-label="Toggle navigation"> <span
+                            class="navbar-toggler-icon"></span> </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbar_main5">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"> <a class="nav-link" href="#">Home </a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Men</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Women</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Kids</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="#">Accessory</a> </li>
+                        <li class="nav-item dropdown"> <a class="dropdown-toggle nav-link" href="#"
+                                data-bs-toggle="dropdown"> More </a>
+                            <ul class="dropdown-menu">
+                                <li> <a class="dropdown-item" href="#">Foods and Drink</a> </li>
+                                <li> <a class="dropdown-item" href="#">Home interior</a> </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li> <a class="dropdown-item" href="#">Category name</a> </li>
+                                <li> <a class="dropdown-item" href="#">Another category</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="me-3">
+                        <div class="input-group"> <input type="text" class="form-control" placeholder="Search"> <button
+                                class="btn-icon btn-light btn"> <i class="fa fa-search"></i> </button> </div>
+                    </form>
+                    <div class="widgets-wrap d-none d-xl-flex">
+                        <div class="ms-2 shop">
+                            <div class="cart-count">0</div>
+                            <a href="#" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cart"> <i
+                                    class="fa fa-cart-shopping-fast"></i> <span class="total-count"></span> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <table class="show-cart table">
+
+                    </table>
+                    <div>Total price: $<span class="total-cart"></span></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Order now</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+
+
+
+
+    <!-- modal page -->
+
+    <div class="modal fade" id="cart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">My Cart Shop</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body cartItems">
+
+                    <!-- <div class="card mb-4">
+                        <div class="card-body">
+
+                            <div class="row align-items-center">
+                                <div class="col-md-2">
+                                    <img src="images/Album 4.avif" class="img-fluid" alt="Generic placeholder image">
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center">
+                                    <div>
+                                        <p class="small text-muted mb-4 pb-2">Name</p>
+                                        <p class="lead fw-normal mb-0">iPad Air</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center">
+                                    <div>
+                                        <p class="small text-muted mb-4 pb-2">Quantity</p>
+                                        <p class="lead fw-normal mb-0">1</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center">
+                                    <div>
+                                        <p class="small text-muted mb-4 pb-2">Price</p>
+                                        <p class="lead fw-normal mb-0">$799</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center">
+                                    <div>
+                                        <p class="small text-muted mb-4 pb-2">Total</p>
+                                        <p class="lead fw-normal mb-0">$799</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 d-flex justify-content-center">
+                                    <div>
+                                        <button class="btn btn-danger"><i class="fas fa-trash-can-list"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> -->
+
+                </div>
+
+                <div class="card-body p-4 totalPrice">
+
+                    <!-- <div class="float-end">
+                        <p class="mb-0 me-5 d-flex align-items-center">
+                            <span class="small text-muted me-2">Order total:</span> <span
+                                class="lead fw-normal">$799</span>
+                        </p>
+                    </div> -->
+
+                </div>
+
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-lg me-2" data-bs-dismiss="modal">Continue
+                        shopping</button>
+                    <button type="button" class="btn btn-primary btn-lg">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <section class="text-center bg-black py-5 my-5 text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-7 py-5 mx-auto">
+                    <h1 class="text-light">Online SHOP</h1>
+                    <p class="text-muted mb-3">Something short and leading about the collection below—its contents, the
+                        creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it
+                        entirely.</p>
+
+                    <a class="btn btn-primary" href="">Main call to action</a>
+                    <a class="btn btn-secondary" href="">Secondary action</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- post-card -->
+
+    <section class="post-cards py-5 bg-light">
+        <div class="container">
+            <div class="row g-4 products-carts">
+
+                <!-- <div class="col-md-4 card-item">
+                    <article class="post card shadow-sm">
+                        <img class="card-img-top" src="images/Album 1.webp" alt="post">
+                        <div class="card-body">
+                            <div class="title-text">
+                                <h5>Gaming Laptop</h5>
+                            </div>
+                            <div class="card-text">
+                                <p class="text-muted">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn btn-group btn-sm">
+                                    <button class="cart-button">
+                                        <span class="add-to-cart">Add to cart</span>
+                                        <span class="added">Added</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-box"></i>
+                                    </button>
+                                </div>
+                                <p class="m-0 text-muted">78 $</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                
+                 <div class="col-md-4 card-item">
+                    <article class="post card shadow-sm">
+                        <img class="card-img-top" src="images/Album 2.jpg" alt="post">
+                        <div class="card-body">
+                            <div class="title-text">
+                                <h5>Gaming Headphone</h5>
+                            </div>
+                            <div class="card-text">
+                                <p class="text-muted">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn btn-group btn-sm">
+                                    <button class="cart-button">
+                                        <span class="add-to-cart">Add to cart</span>
+                                        <span class="added">Added</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-box"></i>
+                                    </button>
+                                </div>
+                                <p class="m-0 text-muted">400 $</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 card-item">
+                    <article class="post card shadow-sm">
+                        <img class="card-img-top" src="images/Album 3.webp" alt="post">
+                        <div class="card-body">
+                            <div class="title-text">
+                                <h5>Gaming Mouse</h5>
+                            </div>
+                            <div class="card-text">
+                                <p class="text-muted">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn btn-group btn-sm">
+                                    <button class="cart-button">
+                                        <span class="add-to-cart">Add to cart</span>
+                                        <span class="added">Added</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-box"></i>
+                                    </button>
+                                </div>
+                                <span class="m-0 text-muted">220 $</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 card-item">
+                    <article class="post card shadow-sm">
+                        <img class="card-img-top" src="images/Album 4.avif" alt="post">
+                        <div class="card-body">
+                            <div class="title-text">
+                                <h5>Gaming Desktop</h5>
+                            </div>
+                            <div class="card-text">
+                                <p class="text-muted">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn btn-group btn-sm">
+                                    <button class="cart-button">
+                                        <span class="add-to-cart">Add to cart</span>
+                                        <span class="added">Added</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-box"></i>
+                                    </button>
+                                </div>
+                                <span class="m-0 text-muted">120 $</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="col-md-4 card-item">
+                    <article class="post card shadow-sm">
+                        <img class="card-img-top" src="images/Album 5.jpeg" alt="post">
+                        <div class="card-body">
+                            <div class="title-text">
+                                <h5>Gaming Monitor</h5>
+                            </div>
+                            <div class="card-text">
+                                <p class="text-muted">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn btn-group btn-sm">
+                                    <button class="cart-button">
+                                        <span class="add-to-cart">Add to cart</span>
+                                        <span class="added">Added</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-box"></i>
+                                    </button>
+                                </div>
+                                <span class="m-0 text-muted">100 $</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+
+                <div class="col-md-4 card-item">
+                    <article class="post card shadow-sm">
+                        <img class="card-img-top" src="images/Album 6.jpg" alt="post">
+                        <div class="card-body">
+                            <div class="title-text">
+                                <h5>Gaming Mouse</h5>
+                            </div>
+                            <div class="card-text">
+                                <p class="text-muted">This is a wider card with supporting text below as a natural
+                                    lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn btn-group btn-sm">
+                                    <button class="cart-button">
+                                        <span class="add-to-cart">Add to cart</span>
+                                        <span class="added">Added</span>
+                                        <i class="fas fa-shopping-cart"></i>
+                                        <i class="fas fa-box"></i>
+                                    </button>
+                                </div>
+                                <span class="m-0 text-muted">45 $</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>  -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-muted py-5">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-auto">
+                    <p>Alien example is © Bootstrap, but please download and customize it for yourself!</p>
+                    <p>New to Bootstrap?
+                        <a href="">Visit the homepage</a>
+                        or read our
+                        <a href="">getting started guide.</a>
+                    </p>
+                </div>
+                <div class="col-auto ">
+                    <p> <a href="#">Back to top</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

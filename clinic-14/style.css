@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lobster&family=Roboto+Mono:ital@1&family=Roboto:ital@1&display=swap');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font:  'Roboto Mono', monospace;;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* my css code */
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 1180px;
+    margin: 0 auto;
+}
+
+/* top-header */
+
+.top-header {
+    border-bottom: 1px solid #707070;
+    padding: 10px 0;
+}
+
+.right .fa-clock {
+    color: #2BAAEC;
+}
+
+.left a {
+    color: #2BAAEC;
+    padding: 0 10px;
+}
+
+.left .fa-twitter {
+    color: #25E6C8;
+}
+
+/* header */
+
+.header {
+    padding: 15px 0;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.menu ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: #363636;
+    padding: 0 25px;
+    text-transform: capitalize;
+}
+
+/* sec1 */
+
+.showcase {
+    background-color: #DEDEDE;
+}
+
+.showcase img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.info {
+    padding: 90px 20px 70px 130px; 
+    margin-right: -66px;
+}
+
+.info h2 {
+    color: #363636;
+    font-size: 47px;
+    margin-bottom: 30px;
+}
+
+.info p {
+    color: #626262;
+    font-size: 15px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.info a {
+    background-color: #25E6C8;
+    color: #fff;
+    padding: 10px 40px 10px 40px;
+    border-radius: 8px;
+}
+
+/* sec2 */
+
+.about-us {
+    margin-top: 100px;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.text h3 {
+    font-size: 45px;
+    width: 570px;
+}
+
+.text h3 span {
+    color: #2BAAEC;
+}
+
+.line {
+    background-color: #25E6C8;
+    width: 705PX;
+    height: 4px;
+    margin: 20PX 0 20px 0;
+}
+
+.text p {
+    width: 690px;
+    padding: 17px 0;
+    color: #626262;
+}
+
+.text2 {
+    display: flex;
+    margin-bottom: 43px;
+}
+
+.number {
+    width: 250px;
+    margin-top: 30px;
+    color: #2BAAEC;
+}
+
+.number h3 {
+    font-size: 40px;
+}
+
+.number p {
+    font-size: 18px;
+}
+
+/* sec3 */
+
+.our h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    font-size: 40px;
+}
+
+.line2 {
+    background-color: #25E6C8;
+    width: 450PX;
+    height: 4px;
+    margin: 0 auto;
+}
+
+.services .container {
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.services {
+    background-color: #F7F7F7;
+    padding: 50px 0;
+}
+
+.services .box {
+    background-color: #fff;
+    width: 32%;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.box img {
+    margin-top: 35px;
+    border-radius: 50%;
+    padding: 30px; 
+    background-color: #25E6C8;
+}
+
+.box .img2 {
+    background-color: #2BAAEC;
+}
+
+.box h3{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 22px;
+    color: #363636;
+}
+
+.box p {
+    width: 250px;
+    margin: 60px auto;
+    font-size: 17px;
+    color: #626262;
+    font-family: 'Crimson Text', serif;
+}
+
+/* top-footer */
+
+.top-footer{
+    background-color: #2BAAEC;
+}
+
+.top-footer .container p {
+    color: #fff;
+}
+
+.ab {
+    background-color: #4db3e9;
+}
+
+.top-footer a {
+    padding: 10px 40px 10px 40px;
+    background-color: #fff;
+    color: #2BAAEC;
+    border-radius: 8px;
+    margin: 50px 0;
+
+}
+
+/* footer */
+
+.footer {
+    text-align: center;
+    background-color: #2BAAEC;
+    padding: 20px;
+    color: #F3FBFF;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Lobster&family=Roboto&display=swap');
+
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+.header {
+    background-image: url(images/header-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* menu-header */
+
+.menu ul li a {
+    padding: 5px 0px;
+    margin-right: 10px;
+    position: relative;
+    color: #fff;
+} 
+
+.menu ul li a:hover {
+    color: #FFBB00;
+}
+
+.menu ul li a::after {
+    content: '';
+    background-color: #FFBB00;
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+
+/* text-mobile-header */
+
+.text {
+    padding-left: 60px;
+}
+
+.text h2 {
+    font-size: 57px;
+    font-weight: bolder;
+}
+
+.mobile {
+    position: relative;
+}
+
+.mobile .mobo2 {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    box-shadow: 0 15px 50px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 36px;
+}
+
+
+/* section-logo */
+
+.section-logo {
+    margin-top: 300px;
+}
+
+.section-logo img {
+    width: 160px;
+}
+
+
+/* btn-featur-about us */
+
+.btn-text{
+    background-color: #fff5d9;
+    border: 1px solid rgb(234, 234, 234);
+}
+
+.btn-text:hover{
+    background-color: #fff1bf;
+
+}
+
+
+/* section */
+
+.sec {
+    width: 570px;
+}
+
+.sec h2 {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.ipone-circle img {
+    width: 570px;
+}
+
+
+/* section1 */
+
+/* .section1 {
+    background-image: url(images/Group\ 4499.png)
+} */
+
+.sec1 h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.caption-icon h3 {
+    font-weight: bold;
+    font-size: 20px;
+    color: #000;
+}
+
+.caption-icon p {
+    color: #8A8A8A;
+    font-size: 14px;
+}
+
+.mobile-fea img {
+    width: 575px;
+}
+
+
+/* section2 */
+
+.sec2 {
+    margin-top: 120px;
+}
+
+.sec2 h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.ipone-group img{
+    margin-left: 7px;
+}
+
+
+/* section3 */
+
+.sec3 {
+    background-image: url(images/Layer\ 815.png);
+    background-size: contain;
+    margin-top: 20px;
+}
+
+.sec3-text2 h2 {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.sec3-text2 h3 {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+
+/* section4 */
+
+.section4 {
+    background-image: url(images/Bg.png);
+    background-size: cover;
+    color: lightcyan;
+}
+
+.download h2{
+    font-weight: bold;
+    font-size: 43px;
+}
+
+
+/* footer */
+
+.footer {
+    background-image: url(images/footer.png);
+    background-size: cover;
+    height: 250px;
+}
+
+
+@media screen and (max-width: 540px) {
+    
+    .mobo1 , .mobo2 {
+        width: 50%;
+    }    
+
+    .ipone-circle img , .mobile-fea img , .mobile-down img {
+        width: 70%;
+    }
+
+    .ipone-circle , .mobile-fea , .mobile-down {
+        text-align: center;
+    }
+
+
+    /* .mobile .mobo2{
+        left: 0px;
+    } */
+
+
+    .ipone-group img {
+        width: 70px !important; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* .mobo1 , .mobo2 {
+        width: 50%;
+    }     */
+
+    /* .ipone-circle img , .mobile-fea img , .mobile-down img {
+        width: 70%;
+    } */
+
+    .ipone-circle , .mobile-fea , .mobile-down {
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
